@@ -1,0 +1,12 @@
+const arr = [
+  [1, 2, 3],
+  [3, 4, 5],
+  [6, 7, 8],
+  [9, 0, 9]
+];
+
+const columnSums = arr[0].map((_, colIndex) =>
+  arr.reduce((sum, row) => sum + row[colIndex], 0)
+);
+
+console.log(columnSums); // [19, 13, 25]
